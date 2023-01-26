@@ -66,12 +66,66 @@
 						<li>Analyzing some examples of mislabeled photos</li>
 					</ol>
 					<p>A synthesis of the project can be found here : <a>https://katrinmisel.github.io/project_synthesis.html</a></p>
-				<h3></h3>
-				<h3></h3>
-				<h3></h3>
+
+                <h3>Comparing deep learning model performances on binary sentiment classification > <a href="https://github.com/katrinmisel/sentiment_analysis">link</a></h3>
+                    <ul>
+                        <li>Exploratory data analysis of Tweet data</li>
+                        <li>Evaluating two embedding dictionaries: wiki2vec and GloVe</li>
+                        <li>Evaluating the performance of several models:</li>
+                        <ul>
+                            <li>Simple neural network vs. bidirectional LSTM</li>
+                            <li>GloVe vs. Wiki2Vec embedding</li>
+                            <li>Tweet preprocessor library vs. simple text prep function vs. no text prep</li>
+                        </ul>
+                        <li>Deploying two apps to the cloud:
+                            <ul>
+                                <ol>Simple Keras sequential model: a GloVe embedding layer, a bidirectional LSTM layer, a dense layer > <a href="https://github.com/katrinmisel/sentimentapp">link</a></ol>
+                                <ol>DistilBERT transformer from Huggingface > <a href="https://github.com/katrinmisel/distilbert_sentiment">link</a></ol>
+                            </ul>
+                        </li>
+                    </ul>
+				<h3>Image segmentation for autonomous vehicles > <a href="https://github.com/katrinmisel/image_segmentation">link</a></h3>
+                    <ul>
+                        <li>Creating a custom data generator with Keras Sequence method</li>
+                        <li>Image augmentation with the Albumentations library</li>
+                        <li>Benchmarking multiple architectures, backbones and metrics:
+                            <ul>
+                                <li>Mini U-net as baseline > <a href="https://github.com/katrinmisel/image_segmentation/blob/main/mini_unet.py">architecture</a></li>
+                                <li>Architectures tested: U-net, PSPnet, Linknet</li>
+                                <li>Backbones tested: VGG16, ResNet34</li>
+                                <li>Loss functions: Categorical Focal Dice Loss, Categorical Focal Jaccard Loss</li>
+                            </ul>
+                        </li>
+                        <li>Performance obtained for best model (U-net with ResNet34 backbone, Categorical Focal Dice Loss, augmented data):
+                            <ul>
+                                <li>MeanIoU = 0.73</li>
+                                <li>Loss = 0.20</li>
+                            </ul>
+                        </li>
+                        <li>Creating a webapp with Flask and Streamlit, deploying baseline > <a href="https://github.com/katrinmisel/segmentation_app">link</a></li>
+                    </ul>
+                
+                <h3>Deploying a content recommendation app with Azure > <a href="https://github.com/katrinmisel/recommendation_app">link</a></h3>
+                    <ul>
+                        <li>Exploring recommendation algorithm options:
+                            <ul>
+                                <li>Content-Based Filtering with article embeddings</li>
+                                <li>Collaborative Filtering, comparing two librairies: Surprise and Implicit</li>
+                            </ul>
+                        </li>
+                        <li>Deploying a webapp using Azure functions (HTTP triggered) to Streamlit > <a href="https://recommendations.streamlit.app/">link</a></li>
+                    </ul>
+
+				<h3>Current project: Chatbot, tools:</h3>
+                    <ul>
+                        <li>Microsoft Bot Framework SDK v4 for Python</li>
+                        <li>Azure cognitive service LUIS</li>
+                        <li>Web App with Azure</li>
+                        <li>Bot Framework Emulator</li>
+                    </ul>
+
 				<br>    
-			<h2>Articles</h2>
-				<p><a href="https://medium.com/@katrinmisel/beginners-guide-to-twitter-sentiment-analysis-with-deep-learning-8b3bfdd747af">Beginner’s guide to Twitter sentiment analysis with deep learning</a></p>
+			
 		</div>    
 		
 	</body>
